@@ -17,4 +17,7 @@ Este proyecto se basa en la creación/implementación de un modelo de segmentaci
   -  Uso de patches por imagen, ya que las imágenes son, en promedio, de 1000x1000.
     
 - **losses_metrics**:
-  - Este archivo contiene las losses que se usarán para entrenar el modelo. 
+  - Este archivo contiene las losses que se usarán para entrenar el modelo.
+ 
+# IMPORTANTE
+- El entrenamiento del modelo se está realizando en Kaggle por el uso de la GPU. Estos archivos fueron creados para utilizar las funciones definidas y entrenar el modelo directamente en el notebook de Kaggle, facilitando la carga de datos, del modelo, e implementación de las loss functions.
