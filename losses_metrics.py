@@ -1,0 +1,1 @@
+#Aquí se van a crear las losses y métricas para entrenar y evaluar el modelo :)
