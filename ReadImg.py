@@ -74,26 +74,11 @@ def train_test_split(path_main,train_size):
 
 #Diviendo las imágenes en patches: Realizar un down scale directamente de las imágenes a 256x256 puede afectar a la calidad de las imágenes
 def extract_balanced_patches(imgs, masks, patch_size=256, stride=128, min_mask_area=100, neg_ratio=0.5, seed=42):
-    """
-    Extrae patches con y sin caries de listas de imágenes y máscaras grandes.
-
-    Args:
-        imgs (list of np.array): imágenes en escala de grises.
-        masks (list of np.array): máscaras binarias.
-        patch_size (int): tamaño del patch (patch_size x patch_size).
-        stride (int): paso para sliding window.
-        min_mask_area (int): mínimo número de píxeles en la máscara para considerar patch positivo.
-        neg_ratio (float): proporción de negativos respecto a positivos (ejemplo 0.5 -> la mitad).
-        seed (int): semilla para reproducibilidad.
-
-    Returns:
-        patch_imgs (list of np.array): patches extraídos de imágenes.
-        patch_masks (list of np.array): patches extraídos de máscaras.
-    """
     random.seed(seed)
     pos_patches = []
     neg_patches = []
 
+   #Creando los patches por cada imagen
     for img, mask in zip(imgs, masks):
         H, W = img.shape
         for top in range(0, H - patch_size + 1, stride):
@@ -106,7 +91,7 @@ def extract_balanced_patches(imgs, masks, patch_size=256, stride=128, min_mask_a
                 else:
                     neg_patches.append((img_patch, mask_patch))
 
-    # Limitar negativos para balancear
+    #Limitar los píxeles 'negativos' para balancear
     num_pos = len(pos_patches)
     num_neg = int(num_pos * neg_ratio)
     neg_patches = random.sample(neg_patches, min(len(neg_patches), num_neg))
@@ -177,4 +162,5 @@ for img,mask in dataloader: #Itero por cada batch
       plt.show()
       plt.imshow(mask[i].reshape(img[i].shape[1],img[i].shape[2]),cmap="gray")
       plt.show()
+
 """
