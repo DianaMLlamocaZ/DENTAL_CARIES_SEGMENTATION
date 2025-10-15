@@ -4,7 +4,9 @@ Este proyecto se basa en la creación/implementación de un modelo de segmentaci
 # ARCHIVOS
 - **Dataset.py**: Contiene el código para crear el custom dataset (recibe listas de imágenes y máscaras). Además, contiene del "data augmentation" dependiendo el parámetro "augment".
 - **LoadDataset.py**: Contiene el código para cear el dataloader y verificación de datos por cada batch.
-- **Model.py**: Código *referencial* del entrenamiento, usando modelos de arquitectura U-Net de la librería **segmentation_models_pytorch** con encoder de pesos preentrenados. **Usé Kaggle para entrenar al modelo y utilizar la GPU. Por lo que el código del entrenamiento se encuentra en un notebook creado en Kaggle**
+- **Model.py**: Código *referencial* del entrenamiento, usando modelos de arquitectura U-Net de la librería **segmentation_models_pytorch** con encoder de pesos preentrenados.
+
+  **Usé Kaggle para entrenar al modelo y utilizar la GPU. Por lo que el código del entrenamiento se encuentra en un notebook creado en Kaggle**
 - **ReadImg.py**:
   -  Cargar cada imagen y máscara individualmente desde su path.
   -  Juntar las imágenes y máscaras en listas para realizar la división de datos en train/val sets mediante slicing.
