@@ -69,7 +69,5 @@ for epoca in range(epocas):
     print(f"Época {index}. Loss: {error_epoca}")
 
 
- #¿Cómo se sobreentiende que tengo que usar BCEWithLoss en una matriz y no en un vector? :O Tema a ver
-       
 
         
