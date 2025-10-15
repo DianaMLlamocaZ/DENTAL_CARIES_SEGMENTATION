@@ -8,7 +8,7 @@ Este proyecto se basa en la creación/implementación de un modelo de segmentaci
   
 - **Model.py**: Código *referencial* del entrenamiento, usando modelos de arquitectura U-Net de la librería **segmentation_models_pytorch** con encoder de pesos preentrenados.
 
-  **Usé Kaggle para entrenar al modelo y utilizar la GPU. Por lo que el código del entrenamiento se encuentra en un notebook creado en Kaggle**
+  **IMPORTANTE: Usé Kaggle para entrenar al modelo y utilizar la GPU. Por lo que el código del entrenamiento se encuentra en un notebook creado en Kaggle**
  
 - **ReadImg.py**:
   -  Cargar cada imagen y máscara individualmente desde su path.
