@@ -2,7 +2,7 @@
 Este proyecto se basa en la creación/implementación de un modelo de segmentación de caries en radiografías dentales. 
 
 # ARCHIVOS
-- **Dataset.py**: Contiene el código para crear el custom dataset (recibe listas de imágenes y máscaras). Además, contiene el "data augmentation" dependiendo el parámeter "augment".
+- **Dataset.py**: Contiene el código para crear el custom dataset (recibe listas de imágenes y máscaras). Además, contiene el "data augmentation" dependiendo el parámetro "augment".
 - **LoadDataset.py**: Contiene el código para cear el dataloader y verificación de datos por cada batch.
 - **Model.py**: Código *referencial* del entrenamiento, usando modelos de arquitectura U-Net de la librería **segmentation_models_pytorch** con encoder de pesos preentrenados. **Usé Kaggle para entrenar al modelo y utilizar la GPU. Por lo que el código del entrenamiento se encuentra en un notebook creado en Kaggle**
 - **ReadImg.py**:
