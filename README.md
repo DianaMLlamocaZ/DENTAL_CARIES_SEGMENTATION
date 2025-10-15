@@ -2,7 +2,7 @@
 Este proyecto se basa en la creación/implementación de un modelo de segmentación de caries en radiografías dentales. 
 
 # ARCHIVOS
-- **Dataset.py**: Contiene el código para crear el custom dataset (recibe listas de imágenes y máscaras). Además, contiene del "data augmentation" dependiendo el parámetro "augment".
+- **Dataset.py**: Contiene el código para crear el custom dataset (recibe listas de imágenes y máscaras). Además, contiene el "data augmentation" dependiendo del parámetro "augment".
   
 - **LoadDataset.py**: Contiene el código para cear el dataloader y verificación de datos por cada batch.
   
