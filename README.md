@@ -16,7 +16,7 @@ Este proyecto se basa en la creación/implementación de un modelo de segmentaci
   -  Crear el dataset object utilizando el custom dataset definido anteriormente.
   -  Uso de patches por imagen, ya que las imágenes son, en promedio, de 1000x1000.
     
-- [**losses_metrics**](./losses_metrics):
+- [**losses_metrics**](./losses_metrics.py):
   - Este archivo contiene las losses que se usarán para entrenar el modelo.
  
 # IMPORTANTE
