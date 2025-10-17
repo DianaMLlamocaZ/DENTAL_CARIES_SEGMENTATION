@@ -6,7 +6,7 @@ Este proyecto se basa en la creación/implementación de un modelo de segmentaci
   
 - [**LoadDataset.py**](./LoadDataset.py): Contiene el código para crear el dataloader y verificar los datos por cada batch.
   
-- [**Model.py**](./Model.py): Código que contiene un modelo preentrenado de Segmentation Models Ptorch y un modelo U-Net small creado desde cero para realizar pruebas debido a la cantidad de datos. Además, contiene un pequeño código *referencial* del entrenamiento, usando modelos de arquitectura U-Net de la librería **segmentation_models_pytorch** con encoder de pesos preentrenados.
+- [**Model.py**](./Model.py): Código que contiene un modelo preentrenado de la librería **Segmentation Models Pytorch** y un modelo U-Net small creado desde cero para realizar pruebas debido a la cantidad de datos. Además, contiene un pequeño código *referencial* del entrenamiento.
 
   **IMPORTANTE: Usé Kaggle para entrenar al modelo y utilizar la GPU. Por lo que el código del entrenamiento se encuentra en un notebook creado en Kaggle**
  
