@@ -20,4 +20,4 @@ Este proyecto se basa en la creación/implementación de un modelo de segmentaci
   - Este archivo contiene las losses y métricas que se usaron para entrenar y evaluar el performance del modelo.
  
 # IMPORTANTE
-- El entrenamiento del modelo se está realizando en Kaggle por el uso de la GPU. Estos archivos fueron creados para utilizar las funciones definidas y entrenar el modelo directamente en el notebook de Kaggle, facilitando la carga de datos, del modelo, e implementación de las loss functions.
+- El entrenamiento del modelo se está realizando en Kaggle por el uso de la GPU. Estos archivos fueron creados para utilizar las funciones definidas y entrenar el modelo directamente en el notebook de Kaggle, facilitando la carga de datos, del modelo, utilización de las loss functions y métricas para evaluar el performance.
